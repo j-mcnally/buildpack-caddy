@@ -20,5 +20,5 @@ cd $DIR; cp ../Procfile $1/Procfile
 cd $CURDIR
 
 echo "-----> Deploy Caddy Runner"
-cd $DIR; cp ../run_caddy.sh $1/run_caddy.sh
+cd $DIR; cp ../setup_caddy.sh $1/setup_caddy.sh
 cd $CURDIR 
