@@ -1,0 +1,19 @@
+#!/bin/bash
+
+CURDIR=$PWD
+DIR="$( cd "$( dirname "$0" )" && pwd )"
+echo "-----> Installing latest caddy bin"
+if [ -f $2/caddy_linux_amd64.zip ]; then
+  echo "-----> caddy is already installed"
+else
+  echo "-----> downloading and compile znc"
+  cd $2; wget https://github.com/mholt/caddy/releases/download/v0.5.0/caddy_linux_amd64.zip
+  cd $2; unzip caddy_linux_amd64.zip
+  #cp  $1/
+
+fi
+
+
+echo "-----> Setting up Procfile"
+cd $DIR; cp ../Procfile $1/Procfile
+cd $CURDIR
