@@ -1,1 +1,1 @@
-web: caddy -conf="./HerokuCaddyfile"
+web: ./run_caddy

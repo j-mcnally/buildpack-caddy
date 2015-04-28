@@ -17,9 +17,6 @@ fi
 
 echo "-----> Proxying Caddyfile"
 
-echo localhost:$PORT > $1/HerokuCaddyfile
-echo "import ./Caddyfile" >> $1/HerokuCaddyfile
-
 
 echo "-----> Setting up Procfile"
 cd $DIR; cp ../Procfile $1/Procfile
