@@ -13,8 +13,12 @@ else
   cd $2; mkdir -p /app/tmp/cache
   cd $2; unzip caddy_linux_amd64.zip
   cp $2/caddy_linux_amd64 $1/caddy
-
 fi
+
+echo "-----> Proxying Caddyfile"
+
+echo localhost:$PORT > $1/HerokuCaddyfile
+echo "import ./Caddyfile" >> $1/HerokuCaddyfile
 
 
 echo "-----> Setting up Procfile"
