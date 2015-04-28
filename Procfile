@@ -1,1 +1,1 @@
-web: ./run_caddy.sh
+web: ./setup_caddy.sh && ./caddy -conf="HerokuCaddyfile"
