@@ -15,9 +15,10 @@ else
   cp $2/caddy_linux_amd64 $1/caddy
 fi
 
-echo "-----> Proxying Caddyfile"
-
-
 echo "-----> Setting up Procfile"
 cd $DIR; cp ../Procfile $1/Procfile
 cd $CURDIR
+
+echo "-----> Deploy Caddy Runner"
+cd $DIR; cp ../run_caddy.sh $1/run_caddy.sh
+cd $CURDIR 
