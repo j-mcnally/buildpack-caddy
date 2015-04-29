@@ -1,3 +1,3 @@
 #!/bin/sh
-echo localhost:$PORT > HerokuCaddyfile
+echo 0.0.0.0:$PORT > HerokuCaddyfile
 echo "import ./Caddyfile" >> HerokuCaddyfile
