@@ -15,7 +15,8 @@ echo "-----> Installing latest caddy bin"
 #   cp $2/caddy_linux_amd64 $1/caddy
 # fi
 
-cd $2; $2/caddy $1/caddy
+cd $DIR; ../caddy $1/caddy
+cd $CURDIR
 
 echo "-----> Setting up Procfile"
 cd $DIR; cp ../Procfile $1/Procfile
