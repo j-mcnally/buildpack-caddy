@@ -1,1 +1,1 @@
-web: ./setup_caddy.sh && ./caddy -conf="HerokuCaddyfile"
+web: ./caddy -port $PORT
