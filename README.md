@@ -1,6 +1,6 @@
 # Heroku Buildpack: Caddy
 
-This is a [Heroku buildpack][buildpack] for [Caddy][caddy].
+This is a Heroku Buildpack for Caddy Server.
 
 ## Getting Started
 
