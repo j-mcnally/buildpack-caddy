@@ -12,4 +12,10 @@ Set your buildpack to
 
 `heroku config:add BUILDPACK_URL=https://github.com/j-mcnally/buildpack-caddy.git`
 
+Set environment variable `PLUGIN`:
+
+`PLUGIN`=`http.awslambda,http.minify,tls.dns.googlecloud`
+
+in settings of your heroku app
+
 Profit.
